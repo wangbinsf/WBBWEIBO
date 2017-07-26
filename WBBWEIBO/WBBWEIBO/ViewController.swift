@@ -20,6 +20,8 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    func testFunc() {
+        print("你知道我是谁吗？")
+    }
 }
 
