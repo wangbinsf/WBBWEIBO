@@ -1,0 +1,9 @@
+
+platform :ios, ‘8.0’
+
+target 'WBBWEIBO' do
+
+  use_frameworks!
+  pod 'QorumLogs', '~> 0.9'
+
+end
