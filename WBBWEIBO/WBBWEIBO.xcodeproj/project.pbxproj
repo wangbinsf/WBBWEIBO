@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2DC49BD364EA004EA41466A4 /* Pods_WBBWEIBO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 531B63F325A791FA44F551E5 /* Pods_WBBWEIBO.framework */; };
 		C3F6371B1F28D07D0009A02B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F6371A1F28D07D0009A02B /* AppDelegate.swift */; };
 		C3F6371D1F28D07D0009A02B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F6371C1F28D07D0009A02B /* ViewController.swift */; };
 		C3F637201F28D07D0009A02B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3F6371E1F28D07D0009A02B /* Main.storyboard */; };
@@ -33,7 +34,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C3F637171F28D07D0009A02B /* WBBWEIBO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WBBWEIBO.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		531B63F325A791FA44F551E5 /* Pods_WBBWEIBO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WBBWEIBO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F08E70A6212370F8971FB3E /* Pods-WBBWEIBO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WBBWEIBO.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WBBWEIBO/Pods-WBBWEIBO.debug.xcconfig"; sourceTree = "<group>"; };
+		C3F637171F28D07D0009A02B /* 宾盈.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "宾盈.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3F6371A1F28D07D0009A02B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3F6371C1F28D07D0009A02B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C3F6371F1F28D07D0009A02B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -45,6 +48,7 @@
 		C3F637361F28D07D0009A02B /* WBBWEIBOUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WBBWEIBOUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3F6373A1F28D07D0009A02B /* WBBWEIBOUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBBWEIBOUITests.swift; sourceTree = "<group>"; };
 		C3F6373C1F28D07D0009A02B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6A3B03B203572D5F83EA4A0 /* Pods-WBBWEIBO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WBBWEIBO.release.xcconfig"; path = "Pods/Target Support Files/Pods-WBBWEIBO/Pods-WBBWEIBO.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DC49BD364EA004EA41466A4 /* Pods_WBBWEIBO.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +77,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6F8A905E06356CBEE99FCE94 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				531B63F325A791FA44F551E5 /* Pods_WBBWEIBO.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B04F2A45394A9B844B6CAB3F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8F08E70A6212370F8971FB3E /* Pods-WBBWEIBO.debug.xcconfig */,
+				E6A3B03B203572D5F83EA4A0 /* Pods-WBBWEIBO.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C3F6370E1F28D07D0009A02B = {
 			isa = PBXGroup;
 			children = (
@@ -79,13 +101,15 @@
 				C3F6372E1F28D07D0009A02B /* WBBWEIBOTests */,
 				C3F637391F28D07D0009A02B /* WBBWEIBOUITests */,
 				C3F637181F28D07D0009A02B /* Products */,
+				B04F2A45394A9B844B6CAB3F /* Pods */,
+				6F8A905E06356CBEE99FCE94 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		C3F637181F28D07D0009A02B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C3F637171F28D07D0009A02B /* WBBWEIBO.app */,
+				C3F637171F28D07D0009A02B /* 宾盈.app */,
 				C3F6372B1F28D07D0009A02B /* WBBWEIBOTests.xctest */,
 				C3F637361F28D07D0009A02B /* WBBWEIBOUITests.xctest */,
 			);
@@ -129,9 +153,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C3F6373F1F28D07D0009A02B /* Build configuration list for PBXNativeTarget "WBBWEIBO" */;
 			buildPhases = (
+				8FA209DEA6BAA01DEED52175 /* [CP] Check Pods Manifest.lock */,
 				C3F637131F28D07D0009A02B /* Sources */,
 				C3F637141F28D07D0009A02B /* Frameworks */,
 				C3F637151F28D07D0009A02B /* Resources */,
+				B27E4A1058B127281C3C39F8 /* [CP] Embed Pods Frameworks */,
+				A6020404B4C2356FAD0D0653 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -139,7 +166,7 @@
 			);
 			name = WBBWEIBO;
 			productName = WBBWEIBO;
-			productReference = C3F637171F28D07D0009A02B /* WBBWEIBO.app */;
+			productReference = C3F637171F28D07D0009A02B /* 宾盈.app */;
 			productType = "com.apple.product-type.application";
 		};
 		C3F6372A1F28D07D0009A02B /* WBBWEIBOTests */ = {
@@ -252,6 +279,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8FA209DEA6BAA01DEED52175 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A6020404B4C2356FAD0D0653 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WBBWEIBO/Pods-WBBWEIBO-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B27E4A1058B127281C3C39F8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WBBWEIBO/Pods-WBBWEIBO-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C3F637131F28D07D0009A02B /* Sources */ = {
@@ -403,6 +478,7 @@
 		};
 		C3F637401F28D07D0009A02B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F08E70A6212370F8971FB3E /* Pods-WBBWEIBO.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -411,7 +487,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bin.WBBWEIBO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "宾盈";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -419,6 +495,7 @@
 		};
 		C3F637411F28D07D0009A02B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6A3B03B203572D5F83EA4A0 /* Pods-WBBWEIBO.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -427,7 +504,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bin.WBBWEIBO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "宾盈";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
