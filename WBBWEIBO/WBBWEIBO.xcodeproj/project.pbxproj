@@ -54,8 +54,8 @@
 		C32B03401F29BF3600CC7394 /* NullViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NullViewController.swift; sourceTree = "<group>"; };
 		C3F637171F28D07D0009A02B /* WBBWB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WBBWB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3F6371A1F28D07D0009A02B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C3F637211F28D07D0009A02B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = WBBWEIBO/Assets.xcassets; sourceTree = "<group>"; };
-		C3F637261F28D07D0009A02B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = WBBWEIBO/Info.plist; sourceTree = "<group>"; };
+		C3F637211F28D07D0009A02B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C3F637261F28D07D0009A02B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C3F6372B1F28D07D0009A02B /* WBBWEIBOTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WBBWEIBOTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3F6372F1F28D07D0009A02B /* WBBWEIBOTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBBWEIBOTests.swift; sourceTree = "<group>"; };
 		C3F637311F28D07D0009A02B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -203,8 +203,6 @@
 				C3F6372E1F28D07D0009A02B /* WBBWEIBOTests */,
 				C3F637391F28D07D0009A02B /* WBBWEIBOUITests */,
 				C3F637181F28D07D0009A02B /* Products */,
-				C3F637211F28D07D0009A02B /* Assets.xcassets */,
-				C3F637261F28D07D0009A02B /* Info.plist */,
 				B04F2A45394A9B844B6CAB3F /* Pods */,
 				6F8A905E06356CBEE99FCE94 /* Frameworks */,
 			);
@@ -225,6 +223,8 @@
 			children = (
 				C32B03291F29AA5300CC7394 /* Classes */,
 				C3F6371A1F28D07D0009A02B /* AppDelegate.swift */,
+				C3F637211F28D07D0009A02B /* Assets.xcassets */,
+				C3F637261F28D07D0009A02B /* Info.plist */,
 			);
 			path = WBBWEIBO;
 			sourceTree = "<group>";
