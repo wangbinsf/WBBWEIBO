@@ -23,6 +23,9 @@
 		C3E6A0D81F29FC830050EEB0 /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3E6A0D71F29FC830050EEB0 /* Discover.storyboard */; };
 		C3E6A0DA1F29FC960050EEB0 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3E6A0D91F29FC960050EEB0 /* Profile.storyboard */; };
 		C3E6A0DC1F29FD4A0050EEB0 /* Null.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3E6A0DB1F29FD4A0050EEB0 /* Null.storyboard */; };
+		C3E6A0DE1F2A0DB50050EEB0 /* WBBBaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E6A0DD1F2A0DB50050EEB0 /* WBBBaseTableViewController.swift */; };
+		C3E6A0E01F2A0EE40050EEB0 /* WBBVisitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E6A0DF1F2A0EE40050EEB0 /* WBBVisitor.swift */; };
+		C3E6A0E41F2A0F140050EEB0 /* WBBVisitor.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3E6A0E31F2A0F140050EEB0 /* WBBVisitor.xib */; };
 		C3F6371B1F28D07D0009A02B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F6371A1F28D07D0009A02B /* AppDelegate.swift */; };
 		C3F637221F28D07D0009A02B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3F637211F28D07D0009A02B /* Assets.xcassets */; };
 		C3F637301F28D07D0009A02B /* WBBWEIBOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F6372F1F28D07D0009A02B /* WBBWEIBOTests.swift */; };
@@ -64,6 +67,9 @@
 		C3E6A0D71F29FC830050EEB0 /* Discover.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Discover.storyboard; sourceTree = "<group>"; };
 		C3E6A0D91F29FC960050EEB0 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		C3E6A0DB1F29FD4A0050EEB0 /* Null.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Null.storyboard; sourceTree = "<group>"; };
+		C3E6A0DD1F2A0DB50050EEB0 /* WBBBaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBBBaseTableViewController.swift; sourceTree = "<group>"; };
+		C3E6A0DF1F2A0EE40050EEB0 /* WBBVisitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBBVisitor.swift; sourceTree = "<group>"; };
+		C3E6A0E31F2A0F140050EEB0 /* WBBVisitor.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WBBVisitor.xib; sourceTree = "<group>"; };
 		C3F637171F28D07D0009A02B /* WBBWB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WBBWB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3F6371A1F28D07D0009A02B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3F637211F28D07D0009A02B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -162,6 +168,9 @@
 			isa = PBXGroup;
 			children = (
 				C32B03311F29AAB500CC7394 /* WBBMainViewController.swift */,
+				C3E6A0DD1F2A0DB50050EEB0 /* WBBBaseTableViewController.swift */,
+				C3E6A0DF1F2A0EE40050EEB0 /* WBBVisitor.swift */,
+				C3E6A0E31F2A0F140050EEB0 /* WBBVisitor.xib */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -388,6 +397,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3E6A0D21F29FB1D0050EEB0 /* Main.storyboard in Resources */,
+				C3E6A0E41F2A0F140050EEB0 /* WBBVisitor.xib in Resources */,
 				C3E6A0DC1F29FD4A0050EEB0 /* Null.storyboard in Resources */,
 				C32B03411F29BF3600CC7394 /* MainVCSettings.json in Resources */,
 				C3E6A0D61F29FC6A0050EEB0 /* Message.storyboard in Resources */,
@@ -467,11 +477,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3E6A0DE1F2A0DB50050EEB0 /* WBBBaseTableViewController.swift in Sources */,
 				C32B033C1F29B19900CC7394 /* WBBMessageViewController.swift in Sources */,
 				C32B03341F29AB4C00CC7394 /* Comment.swift in Sources */,
 				C32B03321F29AAB500CC7394 /* WBBMainViewController.swift in Sources */,
 				C32B03281F2994E000CC7394 /* SwiftPch.swift in Sources */,
 				C32B03421F29BF3600CC7394 /* NullViewController.swift in Sources */,
+				C3E6A0E01F2A0EE40050EEB0 /* WBBVisitor.swift in Sources */,
 				C32B03361F29ADB700CC7394 /* WBBHomeViewController.swift in Sources */,
 				C3F6371B1F28D07D0009A02B /* AppDelegate.swift in Sources */,
 				C32B03381F29B15A00CC7394 /* WBBDiscoverViewController.swift in Sources */,
