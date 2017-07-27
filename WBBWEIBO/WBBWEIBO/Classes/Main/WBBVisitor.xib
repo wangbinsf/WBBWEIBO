@@ -23,8 +23,8 @@
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="visitordiscover_feed_image_house" translatesAutoresizingMaskIntoConstraints="NO" id="JUz-aj-eE5" userLabel="fangzi">
                     <rect key="frame" x="140.5" y="296.5" width="94" height="90"/>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LabelLabelLabelLabelLabel" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vho-AG-zeZ">
-                    <rect key="frame" x="77" y="431" width="220" height="18"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vho-AG-zeZ">
+                    <rect key="frame" x="77" y="431" width="220" height="0.0"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="220" id="EOS-Ma-ian"/>
                     </constraints>
@@ -33,22 +33,24 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C80-ge-dmC">
-                    <rect key="frame" x="77" y="468" width="100" height="35"/>
+                    <rect key="frame" x="77" y="441" width="100" height="35"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="100" id="SQ5-CV-fVE"/>
                     </constraints>
                     <state key="normal" title="登录" backgroundImage="common_button_white_disable">
                         <color key="titleColor" red="1" green="0.4941176471" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
+                    <state key="highlighted" backgroundImage="common_button_white_disable"/>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xVd-BD-t4h">
-                    <rect key="frame" x="197" y="468" width="100" height="35"/>
+                    <rect key="frame" x="197" y="441" width="100" height="35"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="100" id="fMN-1o-5ym"/>
                     </constraints>
                     <state key="normal" title="注册" backgroundImage="common_button_white_disable">
-                        <color key="titleColor" red="0.99607843139999996" green="0.43921568630000002" blue="0.0078431372550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
+                    <state key="highlighted" backgroundImage="common_button_white_disable"/>
                 </button>
             </subviews>
             <color key="backgroundColor" red="0.92931067943572998" green="0.92946994304656982" blue="0.92930072546005249" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -58,13 +60,13 @@
                 <constraint firstItem="FIU-wh-5UR" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="7X2-cG-3NR"/>
                 <constraint firstItem="JUz-aj-eE5" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="8" id="7xf-YE-lYg"/>
                 <constraint firstItem="JUz-aj-eE5" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Htn-i1-RyS"/>
-                <constraint firstItem="xVd-BD-t4h" firstAttribute="top" secondItem="vho-AG-zeZ" secondAttribute="bottom" constant="19" id="Int-ED-Hfd"/>
+                <constraint firstItem="xVd-BD-t4h" firstAttribute="top" secondItem="vho-AG-zeZ" secondAttribute="bottom" constant="10" id="Int-ED-Hfd"/>
                 <constraint firstItem="FIU-wh-5UR" firstAttribute="centerX" secondItem="aQq-L1-4eW" secondAttribute="centerX" id="KLr-D8-Hfn"/>
                 <constraint firstItem="vho-AG-zeZ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="MmJ-BC-5B3"/>
                 <constraint firstItem="FIU-wh-5UR" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Vzf-KG-Ahk"/>
                 <constraint firstItem="C80-ge-dmC" firstAttribute="leading" secondItem="vho-AG-zeZ" secondAttribute="leading" id="fIa-Td-Apo"/>
                 <constraint firstItem="vho-AG-zeZ" firstAttribute="top" secondItem="FIU-wh-5UR" secondAttribute="bottom" constant="10" id="i5d-8X-s8f"/>
-                <constraint firstItem="C80-ge-dmC" firstAttribute="top" secondItem="vho-AG-zeZ" secondAttribute="bottom" constant="19" id="yce-DL-tfY"/>
+                <constraint firstItem="C80-ge-dmC" firstAttribute="top" secondItem="vho-AG-zeZ" secondAttribute="bottom" constant="10" id="yce-DL-tfY"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>

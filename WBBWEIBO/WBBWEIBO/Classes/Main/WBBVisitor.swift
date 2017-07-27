@@ -34,7 +34,7 @@ class WBBVisitor: UIView {
         iconImageview.image = UIImage(named: name)
     }
     
-    func startAnimation() {
+    private func startAnimation() {
         let basicAnimation = CABasicAnimation(keyPath: "transform.rotation")
         basicAnimation.toValue = 2 * Double.pi
         basicAnimation.repeatCount = MAXFLOAT

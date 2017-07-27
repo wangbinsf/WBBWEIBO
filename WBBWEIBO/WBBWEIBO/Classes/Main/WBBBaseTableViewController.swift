@@ -16,19 +16,29 @@ class WBBBaseTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
     
     override func loadView() {
         isLogined ? super.loadView() : setupVisitor()
     }
 
-    func setupVisitor() {
+    private func setupVisitor() {
         visitorView = WBBVisitor.visitor()
         view = visitorView
+        
+        visitorView?.loginButton.addTarget(self, action: #selector(loginBtnClick(_:)), for: .touchUpInside)
+        visitorView?.registerButton.addTarget(self, action: #selector(registerBtnClick(_:)), for: .touchUpInside)
+        
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "注册", style: UIBarButtonItemStyle.plain, target: self, action: #selector(registerBtnClick(_:)))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "登录", style: UIBarButtonItemStyle.plain, target: self, action: #selector(loginBtnClick(_:)))
+    }
+    
+    /// 监听登录按钮点击
+    @objc private func loginBtnClick(_ btn: UIButton) {
+        WBLog("")
+    }
+    /// 监听注册按钮点击
+    @objc private func registerBtnClick(_ btn: UIButton) {
+        WBLog("")
     }
 }
