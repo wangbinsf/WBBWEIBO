@@ -10,7 +10,7 @@ import UIKit
 
 class WBBBaseTableViewController: UITableViewController {
     
-    let isLogined = false
+    let isLogined = true
     var visitorView: WBBVisitor?
 
     override func viewDidLoad() {

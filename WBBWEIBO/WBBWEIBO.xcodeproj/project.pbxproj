@@ -17,6 +17,11 @@
 		C32B033C1F29B19900CC7394 /* WBBMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32B033B1F29B19900CC7394 /* WBBMessageViewController.swift */; };
 		C32B03411F29BF3600CC7394 /* MainVCSettings.json in Resources */ = {isa = PBXBuildFile; fileRef = C32B033F1F29BF3600CC7394 /* MainVCSettings.json */; };
 		C32B03421F29BF3600CC7394 /* NullViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32B03401F29BF3600CC7394 /* NullViewController.swift */; };
+		C3590C7E1F2AD33A00EFD686 /* UIBarButtonItem-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3590C7D1F2AD33A00EFD686 /* UIBarButtonItem-Extension.swift */; };
+		C3590C801F2AD6F500EFD686 /* UIButton-Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3590C7F1F2AD6F500EFD686 /* UIButton-Extention.swift */; };
+		C3590C821F2AD86900EFD686 /* TitleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3590C811F2AD86800EFD686 /* TitleButton.swift */; };
+		C3590C861F2B073800EFD686 /* Popview.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3590C851F2B073800EFD686 /* Popview.storyboard */; };
+		C3590C8C1F2B393C00EFD686 /* PopAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3590C8B1F2B393C00EFD686 /* PopAnimator.swift */; };
 		C3E6A0D21F29FB1D0050EEB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3E6A0D11F29FB1D0050EEB0 /* Main.storyboard */; };
 		C3E6A0D41F29FC5A0050EEB0 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3E6A0D31F29FC5A0050EEB0 /* Home.storyboard */; };
 		C3E6A0D61F29FC6A0050EEB0 /* Message.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3E6A0D51F29FC6A0050EEB0 /* Message.storyboard */; };
@@ -61,6 +66,11 @@
 		C32B033B1F29B19900CC7394 /* WBBMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBBMessageViewController.swift; sourceTree = "<group>"; };
 		C32B033F1F29BF3600CC7394 /* MainVCSettings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MainVCSettings.json; sourceTree = "<group>"; };
 		C32B03401F29BF3600CC7394 /* NullViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NullViewController.swift; sourceTree = "<group>"; };
+		C3590C7D1F2AD33A00EFD686 /* UIBarButtonItem-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem-Extension.swift"; sourceTree = "<group>"; };
+		C3590C7F1F2AD6F500EFD686 /* UIButton-Extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton-Extention.swift"; sourceTree = "<group>"; };
+		C3590C811F2AD86800EFD686 /* TitleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleButton.swift; sourceTree = "<group>"; };
+		C3590C851F2B073800EFD686 /* Popview.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Popview.storyboard; sourceTree = "<group>"; };
+		C3590C8B1F2B393C00EFD686 /* PopAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopAnimator.swift; sourceTree = "<group>"; };
 		C3E6A0D11F29FB1D0050EEB0 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		C3E6A0D31F29FC5A0050EEB0 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		C3E6A0D51F29FC6A0050EEB0 /* Message.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Message.storyboard; sourceTree = "<group>"; };
@@ -129,10 +139,10 @@
 		C32B03291F29AA5300CC7394 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				C32B032C1F29AA5300CC7394 /* Home */,
 				C32B032A1F29AA5300CC7394 /* Compose */,
 				C32B033D1F29BF2600CC7394 /* Other */,
 				C32B032B1F29AA5300CC7394 /* Discover */,
-				C32B032C1F29AA5300CC7394 /* Home */,
 				C32B032D1F29AA5300CC7394 /* Main */,
 				C32B032E1F29AA5300CC7394 /* Message */,
 				C32B032F1F29AA5300CC7394 /* Profile */,
@@ -159,6 +169,7 @@
 		C32B032C1F29AA5300CC7394 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				C3590C841F2B072000EFD686 /* Popview */,
 				C32B03351F29ADB700CC7394 /* WBBHomeViewController.swift */,
 			);
 			path = Home;
@@ -195,7 +206,11 @@
 			isa = PBXGroup;
 			children = (
 				C32B03271F2994E000CC7394 /* SwiftPch.swift */,
+				C3590C8B1F2B393C00EFD686 /* PopAnimator.swift */,
 				C32B03331F29AB4C00CC7394 /* Comment.swift */,
+				C3590C7D1F2AD33A00EFD686 /* UIBarButtonItem-Extension.swift */,
+				C3590C7F1F2AD6F500EFD686 /* UIButton-Extention.swift */,
+				C3590C811F2AD86800EFD686 /* TitleButton.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -216,6 +231,14 @@
 				C32B03401F29BF3600CC7394 /* NullViewController.swift */,
 			);
 			path = Resource;
+			sourceTree = "<group>";
+		};
+		C3590C841F2B072000EFD686 /* Popview */ = {
+			isa = PBXGroup;
+			children = (
+				C3590C851F2B073800EFD686 /* Popview.storyboard */,
+			);
+			path = Popview;
 			sourceTree = "<group>";
 		};
 		C3E6A0D01F29FB020050EEB0 /* Storyboard */ = {
@@ -399,6 +422,7 @@
 				C3E6A0D21F29FB1D0050EEB0 /* Main.storyboard in Resources */,
 				C3E6A0E41F2A0F140050EEB0 /* WBBVisitor.xib in Resources */,
 				C3E6A0DC1F29FD4A0050EEB0 /* Null.storyboard in Resources */,
+				C3590C861F2B073800EFD686 /* Popview.storyboard in Resources */,
 				C32B03411F29BF3600CC7394 /* MainVCSettings.json in Resources */,
 				C3E6A0D61F29FC6A0050EEB0 /* Message.storyboard in Resources */,
 				C3F637221F28D07D0009A02B /* Assets.xcassets in Resources */,
@@ -477,8 +501,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3590C821F2AD86900EFD686 /* TitleButton.swift in Sources */,
 				C3E6A0DE1F2A0DB50050EEB0 /* WBBBaseTableViewController.swift in Sources */,
+				C3590C801F2AD6F500EFD686 /* UIButton-Extention.swift in Sources */,
 				C32B033C1F29B19900CC7394 /* WBBMessageViewController.swift in Sources */,
+				C3590C8C1F2B393C00EFD686 /* PopAnimator.swift in Sources */,
+				C3590C7E1F2AD33A00EFD686 /* UIBarButtonItem-Extension.swift in Sources */,
 				C32B03341F29AB4C00CC7394 /* Comment.swift in Sources */,
 				C32B03321F29AAB500CC7394 /* WBBMainViewController.swift in Sources */,
 				C32B03281F2994E000CC7394 /* SwiftPch.swift in Sources */,
