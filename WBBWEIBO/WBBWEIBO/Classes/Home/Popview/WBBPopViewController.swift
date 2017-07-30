@@ -18,7 +18,5 @@ class WBBPopViewController: UIViewController {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         
     }
-    @IBAction func goBack(_ sender: UIButton) {
-        presentingViewController?.dismiss(animated: true, completion: nil)
-    }
+
 }
