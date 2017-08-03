@@ -22,6 +22,10 @@
 		C3590C821F2AD86900EFD686 /* TitleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3590C811F2AD86800EFD686 /* TitleButton.swift */; };
 		C3590C861F2B073800EFD686 /* Popview.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3590C851F2B073800EFD686 /* Popview.storyboard */; };
 		C3590C8C1F2B393C00EFD686 /* PopAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3590C8B1F2B393C00EFD686 /* PopAnimator.swift */; };
+		C36A4F701F2ECDBB002C7A07 /* QRCode.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C36A4F6F1F2ECDBB002C7A07 /* QRCode.storyboard */; };
+		C36A4F721F2EFA1F002C7A07 /* WBBQRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36A4F711F2EFA1F002C7A07 /* WBBQRCodeViewController.swift */; };
+		C37A45381F31EF9E0079819C /* UIImage-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37A45371F31EF9E0079819C /* UIImage-Extension.swift */; };
+		C37A453A1F31F98A0079819C /* WBBCodeCreatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37A45391F31F98A0079819C /* WBBCodeCreatViewController.swift */; };
 		C3AAB4661F2DB5BE00CBA536 /* WBBPopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AAB4651F2DB5BE00CBA536 /* WBBPopViewController.swift */; };
 		C3AAB4681F2DC4FF00CBA536 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AAB4671F2DC4FF00CBA536 /* Const.swift */; };
 		C3E6A0D21F29FB1D0050EEB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3E6A0D11F29FB1D0050EEB0 /* Main.storyboard */; };
@@ -73,6 +77,10 @@
 		C3590C811F2AD86800EFD686 /* TitleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleButton.swift; sourceTree = "<group>"; };
 		C3590C851F2B073800EFD686 /* Popview.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Popview.storyboard; sourceTree = "<group>"; };
 		C3590C8B1F2B393C00EFD686 /* PopAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PopAnimator.swift; path = ../../Tools/PopAnimator.swift; sourceTree = "<group>"; };
+		C36A4F6F1F2ECDBB002C7A07 /* QRCode.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = QRCode.storyboard; sourceTree = "<group>"; };
+		C36A4F711F2EFA1F002C7A07 /* WBBQRCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBBQRCodeViewController.swift; sourceTree = "<group>"; };
+		C37A45371F31EF9E0079819C /* UIImage-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage-Extension.swift"; sourceTree = "<group>"; };
+		C37A45391F31F98A0079819C /* WBBCodeCreatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBBCodeCreatViewController.swift; sourceTree = "<group>"; };
 		C3AAB4651F2DB5BE00CBA536 /* WBBPopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBBPopViewController.swift; sourceTree = "<group>"; };
 		C3AAB4671F2DC4FF00CBA536 /* Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		C3E6A0D11F29FB1D0050EEB0 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -173,6 +181,7 @@
 		C32B032C1F29AA5300CC7394 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				C36A4F6E1F2ECDAA002C7A07 /* QRCode */,
 				C3590C841F2B072000EFD686 /* Popview */,
 				C32B03351F29ADB700CC7394 /* WBBHomeViewController.swift */,
 			);
@@ -215,6 +224,7 @@
 				C3590C7F1F2AD6F500EFD686 /* UIButton-Extention.swift */,
 				C3590C811F2AD86800EFD686 /* TitleButton.swift */,
 				C3AAB4671F2DC4FF00CBA536 /* Const.swift */,
+				C37A45371F31EF9E0079819C /* UIImage-Extension.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -245,6 +255,16 @@
 				C3590C8B1F2B393C00EFD686 /* PopAnimator.swift */,
 			);
 			path = Popview;
+			sourceTree = "<group>";
+		};
+		C36A4F6E1F2ECDAA002C7A07 /* QRCode */ = {
+			isa = PBXGroup;
+			children = (
+				C36A4F6F1F2ECDBB002C7A07 /* QRCode.storyboard */,
+				C36A4F711F2EFA1F002C7A07 /* WBBQRCodeViewController.swift */,
+				C37A45391F31F98A0079819C /* WBBCodeCreatViewController.swift */,
+			);
+			path = QRCode;
 			sourceTree = "<group>";
 		};
 		C3E6A0D01F29FB020050EEB0 /* Storyboard */ = {
@@ -430,6 +450,7 @@
 				C3E6A0DC1F29FD4A0050EEB0 /* Null.storyboard in Resources */,
 				C3590C861F2B073800EFD686 /* Popview.storyboard in Resources */,
 				C32B03411F29BF3600CC7394 /* MainVCSettings.json in Resources */,
+				C36A4F701F2ECDBB002C7A07 /* QRCode.storyboard in Resources */,
 				C3E6A0D61F29FC6A0050EEB0 /* Message.storyboard in Resources */,
 				C3F637221F28D07D0009A02B /* Assets.xcassets in Resources */,
 				C3E6A0D41F29FC5A0050EEB0 /* Home.storyboard in Resources */,
@@ -515,14 +536,17 @@
 				C3590C7E1F2AD33A00EFD686 /* UIBarButtonItem-Extension.swift in Sources */,
 				C3AAB4681F2DC4FF00CBA536 /* Const.swift in Sources */,
 				C32B03341F29AB4C00CC7394 /* Comment.swift in Sources */,
+				C37A45381F31EF9E0079819C /* UIImage-Extension.swift in Sources */,
 				C32B03321F29AAB500CC7394 /* WBBMainViewController.swift in Sources */,
 				C32B03281F2994E000CC7394 /* SwiftPch.swift in Sources */,
 				C32B03421F29BF3600CC7394 /* NullViewController.swift in Sources */,
 				C3E6A0E01F2A0EE40050EEB0 /* WBBVisitor.swift in Sources */,
 				C32B03361F29ADB700CC7394 /* WBBHomeViewController.swift in Sources */,
 				C3F6371B1F28D07D0009A02B /* AppDelegate.swift in Sources */,
+				C36A4F721F2EFA1F002C7A07 /* WBBQRCodeViewController.swift in Sources */,
 				C32B03381F29B15A00CC7394 /* WBBDiscoverViewController.swift in Sources */,
 				C3AAB4661F2DB5BE00CBA536 /* WBBPopViewController.swift in Sources */,
+				C37A453A1F31F98A0079819C /* WBBCodeCreatViewController.swift in Sources */,
 				C32B033A1F29B18400CC7394 /* WBBProfileViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

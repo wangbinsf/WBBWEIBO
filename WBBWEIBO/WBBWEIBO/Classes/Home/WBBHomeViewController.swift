@@ -42,6 +42,9 @@ class WBBHomeViewController: WBBBaseTableViewController {
         WBLog(1)
     }
     @objc private func rightBarButtonClicked() {
+        let qrStoryboard = UIStoryboard(name: "QRCode", bundle: nil)
+        let qrVc = qrStoryboard.instantiateInitialViewController()
+        present(qrVc!, animated: true, completion: nil)
         WBLog(2)
     }
     @objc private func titleButtonClicked(_ sender: TitleButton) {
