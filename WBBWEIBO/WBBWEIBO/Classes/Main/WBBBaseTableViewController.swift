@@ -10,7 +10,7 @@ import UIKit
 
 class WBBBaseTableViewController: UITableViewController {
     
-    let isLogined = true
+    let isLogined = UserAccount.isLogin()
     var visitorView: WBBVisitor?
 
     override func viewDidLoad() {
@@ -35,7 +35,10 @@ class WBBBaseTableViewController: UITableViewController {
     
     /// 监听登录按钮点击
     @objc private func loginBtnClick(_ btn: UIButton) {
-        WBLog("")
+        let oauthStoryboard = UIStoryboard(name: "OAuth", bundle: nil)
+        let oauthVc = oauthStoryboard.instantiateInitialViewController()
+        present(oauthVc!, animated: true, completion: nil)
+        
     }
     /// 监听注册按钮点击
     @objc private func registerBtnClick(_ btn: UIButton) {

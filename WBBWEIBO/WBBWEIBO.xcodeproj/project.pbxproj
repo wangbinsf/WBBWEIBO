@@ -26,6 +26,11 @@
 		C36A4F721F2EFA1F002C7A07 /* WBBQRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36A4F711F2EFA1F002C7A07 /* WBBQRCodeViewController.swift */; };
 		C37A45381F31EF9E0079819C /* UIImage-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37A45371F31EF9E0079819C /* UIImage-Extension.swift */; };
 		C37A453A1F31F98A0079819C /* WBBCodeCreatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37A45391F31F98A0079819C /* WBBCodeCreatViewController.swift */; };
+		C383FE581F355C690019CFAB /* WBBOAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C383FE571F355C690019CFAB /* WBBOAuthViewController.swift */; };
+		C383FE5A1F355C760019CFAB /* OAuth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C383FE591F355C760019CFAB /* OAuth.storyboard */; };
+		C383FE5C1F35767D0019CFAB /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = C383FE5B1F35767D0019CFAB /* NetworkTools.swift */; };
+		C383FE5E1F35AA660019CFAB /* UserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = C383FE5D1F35AA660019CFAB /* UserAccount.swift */; };
+		C383FE601F35AF220019CFAB /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C383FE5F1F35AF220019CFAB /* String+Extension.swift */; };
 		C3AAB4661F2DB5BE00CBA536 /* WBBPopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AAB4651F2DB5BE00CBA536 /* WBBPopViewController.swift */; };
 		C3AAB4681F2DC4FF00CBA536 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AAB4671F2DC4FF00CBA536 /* Const.swift */; };
 		C3E6A0D21F29FB1D0050EEB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3E6A0D11F29FB1D0050EEB0 /* Main.storyboard */; };
@@ -81,6 +86,11 @@
 		C36A4F711F2EFA1F002C7A07 /* WBBQRCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBBQRCodeViewController.swift; sourceTree = "<group>"; };
 		C37A45371F31EF9E0079819C /* UIImage-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage-Extension.swift"; sourceTree = "<group>"; };
 		C37A45391F31F98A0079819C /* WBBCodeCreatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBBCodeCreatViewController.swift; sourceTree = "<group>"; };
+		C383FE571F355C690019CFAB /* WBBOAuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBBOAuthViewController.swift; sourceTree = "<group>"; };
+		C383FE591F355C760019CFAB /* OAuth.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OAuth.storyboard; sourceTree = "<group>"; };
+		C383FE5B1F35767D0019CFAB /* NetworkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
+		C383FE5D1F35AA660019CFAB /* UserAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAccount.swift; sourceTree = "<group>"; };
+		C383FE5F1F35AF220019CFAB /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		C3AAB4651F2DB5BE00CBA536 /* WBBPopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBBPopViewController.swift; sourceTree = "<group>"; };
 		C3AAB4671F2DC4FF00CBA536 /* Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		C3E6A0D11F29FB1D0050EEB0 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -151,6 +161,7 @@
 		C32B03291F29AA5300CC7394 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				C383FE561F355C3B0019CFAB /* OAuth */,
 				C32B032C1F29AA5300CC7394 /* Home */,
 				C32B032A1F29AA5300CC7394 /* Compose */,
 				C32B033D1F29BF2600CC7394 /* Other */,
@@ -218,6 +229,8 @@
 		C32B03301F29AA5300CC7394 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				C383FE5F1F35AF220019CFAB /* String+Extension.swift */,
+				C383FE5B1F35767D0019CFAB /* NetworkTools.swift */,
 				C32B03271F2994E000CC7394 /* SwiftPch.swift */,
 				C32B03331F29AB4C00CC7394 /* Comment.swift */,
 				C3590C7D1F2AD33A00EFD686 /* UIBarButtonItem-Extension.swift */,
@@ -265,6 +278,16 @@
 				C37A45391F31F98A0079819C /* WBBCodeCreatViewController.swift */,
 			);
 			path = QRCode;
+			sourceTree = "<group>";
+		};
+		C383FE561F355C3B0019CFAB /* OAuth */ = {
+			isa = PBXGroup;
+			children = (
+				C383FE5D1F35AA660019CFAB /* UserAccount.swift */,
+				C383FE571F355C690019CFAB /* WBBOAuthViewController.swift */,
+				C383FE591F355C760019CFAB /* OAuth.storyboard */,
+			);
+			path = OAuth;
 			sourceTree = "<group>";
 		};
 		C3E6A0D01F29FB020050EEB0 /* Storyboard */ = {
@@ -403,7 +426,7 @@
 				TargetAttributes = {
 					C3F637161F28D07D0009A02B = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = H5NBZVR2SP;
+						DevelopmentTeam = 8K5FMWVMXX;
 						ProvisioningStyle = Automatic;
 					};
 					C3F6372A1F28D07D0009A02B = {
@@ -449,6 +472,7 @@
 				C3E6A0E41F2A0F140050EEB0 /* WBBVisitor.xib in Resources */,
 				C3E6A0DC1F29FD4A0050EEB0 /* Null.storyboard in Resources */,
 				C3590C861F2B073800EFD686 /* Popview.storyboard in Resources */,
+				C383FE5A1F355C760019CFAB /* OAuth.storyboard in Resources */,
 				C32B03411F29BF3600CC7394 /* MainVCSettings.json in Resources */,
 				C36A4F701F2ECDBB002C7A07 /* QRCode.storyboard in Resources */,
 				C3E6A0D61F29FC6A0050EEB0 /* Message.storyboard in Resources */,
@@ -529,18 +553,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3590C821F2AD86900EFD686 /* TitleButton.swift in Sources */,
+				C383FE581F355C690019CFAB /* WBBOAuthViewController.swift in Sources */,
 				C3E6A0DE1F2A0DB50050EEB0 /* WBBBaseTableViewController.swift in Sources */,
 				C3590C801F2AD6F500EFD686 /* UIButton-Extention.swift in Sources */,
 				C32B033C1F29B19900CC7394 /* WBBMessageViewController.swift in Sources */,
 				C3590C8C1F2B393C00EFD686 /* PopAnimator.swift in Sources */,
 				C3590C7E1F2AD33A00EFD686 /* UIBarButtonItem-Extension.swift in Sources */,
+				C383FE5E1F35AA660019CFAB /* UserAccount.swift in Sources */,
 				C3AAB4681F2DC4FF00CBA536 /* Const.swift in Sources */,
 				C32B03341F29AB4C00CC7394 /* Comment.swift in Sources */,
 				C37A45381F31EF9E0079819C /* UIImage-Extension.swift in Sources */,
 				C32B03321F29AAB500CC7394 /* WBBMainViewController.swift in Sources */,
 				C32B03281F2994E000CC7394 /* SwiftPch.swift in Sources */,
+				C383FE5C1F35767D0019CFAB /* NetworkTools.swift in Sources */,
 				C32B03421F29BF3600CC7394 /* NullViewController.swift in Sources */,
 				C3E6A0E01F2A0EE40050EEB0 /* WBBVisitor.swift in Sources */,
+				C383FE601F35AF220019CFAB /* String+Extension.swift in Sources */,
 				C32B03361F29ADB700CC7394 /* WBBHomeViewController.swift in Sources */,
 				C3F6371B1F28D07D0009A02B /* AppDelegate.swift in Sources */,
 				C36A4F721F2EFA1F002C7A07 /* WBBQRCodeViewController.swift in Sources */,
@@ -685,11 +713,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = H5NBZVR2SP;
+				DEVELOPMENT_TEAM = 8K5FMWVMXX;
 				INFOPLIST_FILE = WBBWEIBO/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.bin.WBBWEIBO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.95081-shb.www";
 				PRODUCT_NAME = WBBWB;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -703,11 +731,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = H5NBZVR2SP;
+				DEVELOPMENT_TEAM = 8K5FMWVMXX;
 				INFOPLIST_FILE = WBBWEIBO/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.bin.WBBWEIBO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.95081-shb.www";
 				PRODUCT_NAME = WBBWB;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;

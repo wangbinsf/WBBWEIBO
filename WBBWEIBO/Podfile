@@ -5,5 +5,5 @@ target 'WBBWEIBO' do
 
   use_frameworks!
   pod 'QorumLogs', '~> 0.9'
-
+  pod 'AFNetworking'
 end
