@@ -11,8 +11,14 @@ import UIKit
 class UserAccount: NSObject, NSCoding {
     
     var access_token: String?
-    var expires_in: Int = 0
+    var expires_in: Int = 0 {
+        didSet {
+           expire_Date = Date(timeIntervalSinceNow: TimeInterval(expires_in))
+        }
+    }
     var uid: String?
+    var expire_Date: Date?
+    
     
     // MARK: - 生命周期方法
     init(dict: [String: AnyObject]) {
@@ -75,6 +81,12 @@ class UserAccount: NSObject, NSCoding {
         guard let account = NSKeyedUnarchiver.unarchiveObject(withFile: UserAccount.filePath) as? UserAccount else {
             return UserAccount.account
         }
+        
+        guard let date = account.expire_Date, date.compare(Date()) != ComparisonResult.orderedAscending  else {
+            WBLog("过期了")
+            return nil
+        }
+        
         UserAccount.account = account
         
         return UserAccount.account
@@ -91,6 +103,7 @@ class UserAccount: NSObject, NSCoding {
         aCoder.encode(access_token, forKey: "access_token")
         aCoder.encode(expires_in, forKey: "expires_in")
         aCoder.encode(uid, forKey: "uid")
+        aCoder.encode(expire_Date, forKey: "expire_Date")
     }
     
     required init?(coder aDecoder: NSCoder)
@@ -98,6 +111,7 @@ class UserAccount: NSObject, NSCoding {
         self.access_token = aDecoder.decodeObject(forKey: "access_token") as? String
         self.expires_in = aDecoder.decodeInteger(forKey: "expires_in") as Int
         self.uid = aDecoder.decodeObject(forKey: "uid") as? String
+        self.expire_Date = aDecoder.decodeObject(forKey: "expire_Date") as? Date
     }
 }
 

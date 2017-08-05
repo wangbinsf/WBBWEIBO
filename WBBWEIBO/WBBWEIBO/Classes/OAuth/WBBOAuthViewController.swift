@@ -14,7 +14,8 @@ class WBBOAuthViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        let account = UserAccount(dict: ["access_token": "wangbinbin" as AnyObject, "expires_in": 123 as AnyObject, "uid": "fuminmin" as AnyObject])
+        WBLog(account.saveAccount())
         let url = URL(string: "https://api.weibo.com/oauth2/authorize?client_id=1920945083&redirect_uri=www.95081.com")!
         let request = URLRequest(url: url)
         customWebView.loadRequest(request)
