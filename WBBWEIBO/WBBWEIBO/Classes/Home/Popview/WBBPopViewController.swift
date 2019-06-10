@@ -16,7 +16,7 @@ class WBBPopViewController: UIViewController {
         
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        print("这是什么东西")
+        print("这是什么")
     }
 
 }
