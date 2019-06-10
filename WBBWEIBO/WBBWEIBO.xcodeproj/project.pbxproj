@@ -383,7 +383,7 @@
 				TargetAttributes = {
 					C3F637161F28D07D0009A02B = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = H5NBZVR2SP;
+						DevelopmentTeam = ZQBV9JHAK9;
 						ProvisioningStyle = Automatic;
 					};
 					C3F6372A1F28D07D0009A02B = {
@@ -405,6 +405,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -661,13 +662,13 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = H5NBZVR2SP;
+				DEVELOPMENT_TEAM = ZQBV9JHAK9;
 				INFOPLIST_FILE = WBBWEIBO/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bin.WBBWEIBO;
 				PRODUCT_NAME = WBBWB;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -679,13 +680,13 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = H5NBZVR2SP;
+				DEVELOPMENT_TEAM = ZQBV9JHAK9;
 				INFOPLIST_FILE = WBBWEIBO/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bin.WBBWEIBO;
 				PRODUCT_NAME = WBBWB;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
